@@ -1,7 +1,7 @@
 html{
   font-size: 62.5%;
   transition: font-size 0.5s ease;
-  height: 100%;
+  // height: 100%;
   @media screen and (max-width: $small-screen){
     font-size: 52.5%;
   }
@@ -12,8 +12,8 @@ body{
   text-align: center;
   font-family: $body-font-family;
   background-color: $background-color;
-  position: relative;
-  min-height: 100%;
+  // position: relative;
+  // min-height: 100%;
 }
 
 header{
@@ -29,14 +29,21 @@ h1{
   font-weight: bold;
   font-style: normal;
   color: $primary-color;
-  margin: 3rem 0 0 0;
+  margin: 0;
   span{
     font-size: $large-font-size;
     display: block;
     line-height: 0.5;
     font-style: italic;
     margin: 0.5rem 0 0rem 0;
+    // @media screen and (max-width: $small-screen){
+    //   font-size: $medium-font-size;
+    // }
   }
+  // @media screen and (max-width: $small-screen){
+  //   font-size: $large-font-size;
+  // }
+  
 }
 
 h2{
@@ -59,14 +66,15 @@ a{
 }
 
 footer{
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  background: $quaterary-color;
+  // background: $quaterary-color;
   border-top: 2px $secondary-color dotted;
+  margin-bottom: 10px $secondary-color;
   p{
-    margin: 0.3rem;
+    margin: 0.3rem 0;
     padding: 0;
     font-size: $small-font-size;
   }
@@ -107,6 +115,7 @@ footer{
   left: 0%;
   right: 0%;
   top: 0%;
+  // top: -4%;
   bottom: 0%;
   background: rgba(0, 0, 0, 0.5);
   // background: whitesmoke;
@@ -130,7 +139,6 @@ footer{
     left:5%;
     right: 5%;
   }
-  
 }
 
 .input-field{
